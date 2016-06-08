@@ -5,6 +5,8 @@
  */
 package com.erikdhansen.led4j;
 
+import com.erikdhansen.led4j.dreamlink.Dreamlink21x7;
+
 /**
  *
  * 
@@ -14,12 +16,17 @@ package com.erikdhansen.led4j;
  * @author ehansen
  */
 public class Led4j {
-
+    public Dreamlink21x7 dreamlink;
+    
+    public Led4j() {
+        dreamlink = new Dreamlink21x7();
+    }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Led4j l = new Led4j();
+        System.out.println(l.dreamlink.toString());
     }
     
 }
