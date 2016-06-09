@@ -5,7 +5,7 @@
  */
 package com.erikdhansen.led4j;
 
-import com.erikdhansen.led4j.dreamlink.Dreamlink21x7;
+import com.erikdhansen.led4j.devices.Dreamlink21x7;
 
 /**
  *

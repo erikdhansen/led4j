@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.erikdhansen.led4j.dreamlink;
+package com.erikdhansen.led4j.devices;
 
 import java.util.ArrayList;
 
@@ -35,7 +35,7 @@ public class LEDConfiguration21x7 {
         for(int i=0; i < 7; i++) {
             sb.append("Row " + i + "  ");
             for(LEDRow.INDEX n : LEDRow.INDEX.values()) {
-                sb.append(" ").append( rows.get(i).get(n) == true ? "1" : "0" ).append(" ");
+                sb.append(" ").append( String.valueOf(rows.get(i).get(n))).append(" ");
             }
             sb.append("\n");
         }
